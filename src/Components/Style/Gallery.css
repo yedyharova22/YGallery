@@ -1,0 +1,50 @@
+.photos {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+}
+
+.photos>.photo {
+    display: flex;
+    position: relative;
+    padding: 0px;
+    width: fit-content;
+    height: fit-content;
+    object-fit: cover;
+    box-shadow: 0 2px 2px var(--shadow);
+    align-content: flex-end;
+}
+
+.photos>.photo>.overlay {
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.photos>.photo:hover .overlay {
+    opacity: 1;
+}
+
+.photos>.photo>.overlay>.url {
+    outline: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 0px 11px rgba(0,0,0,0.82);
+}
+
+.photos>.photo>.overlay>.url:link,
+.photos>.photo>.overlay>.url:visited, 
+.photos>.photo>.overlay>.url:focus, 
+.photos>.photo>.overlay>.url:hover, 
+.photos>.photo>.overlay>.url:active {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 0px 11px rgba(0,0,0,0.82);
+}

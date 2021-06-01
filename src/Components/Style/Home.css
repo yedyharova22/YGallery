@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.Home {
+    width: 100%;
+    height: fit-content;
+}
+
+#carouselExampleIndicators {
+    min-height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+    width: 100%;
+}
+
+.d-block {
+    height: 87.5vh;
+    background-size: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.205);
+    border-radius: 25px;
+    text-shadow: 3px 0px 11px rgba(0, 0, 0, 1);
+}

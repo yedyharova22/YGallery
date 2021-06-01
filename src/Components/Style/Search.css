@@ -1,0 +1,22 @@
+#searchForm {
+    max-height: 50%;
+}
+
+.form-control, .btn {
+    outline: none;
+    box-shadow: none !important;
+}
+
+.upbtn {
+    cursor: pointer;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    outline: none;
+    text-decoration: none;
+    color: white;
+    z-index: 99999;
+    right: 20px;
+    bottom: 20px;
+    padding: 20px;
+}
